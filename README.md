@@ -15,3 +15,4 @@ https://docs.djangoproject.com/en/4.1/intro/tutorial02/
 '''
 % python manage.py startapp users
 '''
+serializers.py > views.py > urls.py(in webconfigs) > urls.py
