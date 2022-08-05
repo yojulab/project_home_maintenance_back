@@ -31,3 +31,5 @@ http://127.0.0.1:8000/admin/authtoken/tokenproxy/
 '''
 
 '''
+% python -m pip install django-cors-headers
+'''
