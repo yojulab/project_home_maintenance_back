@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.1/intro/tutorial02/
 % python manage.py createsuperuser
 '''
 
-https://docs.djangoproject.com/en/4.1/topics/auth/default/
 '''
 % python manage.py startapp users
 '''
@@ -26,7 +25,9 @@ http://127.0.0.1:8000/users/register/
 http://127.0.0.1:8000/admin/authtoken/tokenproxy/
 
 '''
-% python manage.py runserver
+% python manage.py makemigrations
+% python manage.py migrate
+% python -m pip install Pillow
 '''
 
 '''

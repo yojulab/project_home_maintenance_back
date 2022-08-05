@@ -2,9 +2,9 @@ from django.contrib.auth.models import User
 from rest_framework import generics, status
 from rest_framework.response import Response
 
-from .serializers import RegisterSerializer, LoginSerializer    #, ProfileSerializer
-# from .models import Profile
-# from .permissions import CustomReadOnly
+from .serializers import RegisterSerializer, LoginSerializer, ProfileSerializer
+from .models import Profile
+from .permissions import CustomReadOnly
 
 
 class RegisterView(generics.CreateAPIView):
@@ -22,7 +22,7 @@ class LoginView(generics.GenericAPIView):
         return Response({"token": token.key}, status=status.HTTP_200_OK)
 
 
-# class ProfileView(generics.RetrieveUpdateAPIView):
-#     queryset = Profile.objects.all()
-#     serializer_class = ProfileSerializer
-#     permission_classes = [CustomReadOnly]
+class ProfileView(generics.RetrieveUpdateAPIView):
+    queryset = Profile.objects.all()
+    serializer_class = ProfileSerializer
+    permission_classes = [CustomReadOnly]
