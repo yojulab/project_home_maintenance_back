@@ -12,7 +12,21 @@ https://docs.djangoproject.com/en/4.1/intro/tutorial02/
 % python manage.py createsuperuser
 '''
 
+https://docs.djangoproject.com/en/4.1/topics/auth/default/
 '''
 % python manage.py startapp users
 '''
 serializers.py > views.py > urls.py(in webconfigs) > urls.py
+add rest_framework.authtoken in INSTALLED_APPS
+'''
+% python manage.py makemigrations
+% python manage.py migrate
+'''
+http://127.0.0.1:8000/users/register/
+http://127.0.0.1:8000/admin/authtoken/tokenproxy/
+
+'''
+% python manage.py runserver
+'''
+
+'''
