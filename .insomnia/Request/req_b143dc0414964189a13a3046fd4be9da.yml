@@ -1,0 +1,21 @@
+_id: req_b143dc0414964189a13a3046fd4be9da
+type: Request
+parentId: fld_6e581b1aee724dd7b86c86df65bac928
+modified: 1659790556997
+created: 1659788782103
+url: http://127.0.0.1:8000/posts/
+name: "\bPosts list _GET"
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1659788782103
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,21 @@
+_id: req_8dbebb352da94c9586016eb9f9273379
+type: Request
+parentId: fld_7466c67f088e4c73b85603092e7d6f1a
+modified: 1659790543790
+created: 1659596063135
+url: http://127.0.0.1:8000/users/profile/5/
+name: User Profile _GET
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1659674574417
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

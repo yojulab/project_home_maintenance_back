@@ -1,0 +1,31 @@
+_id: req_9f7459d9f32c42e5b2f898a98c62b9ab
+type: Request
+parentId: fld_6e581b1aee724dd7b86c86df65bac928
+modified: 1659791140192
+created: 1659790614427
+url: http://127.0.0.1:8000/posts/
+name: "\bPosts listwithfilter _GET"
+description: ""
+method: GET
+body: {}
+parameters:
+  - id: pair_347f242ba403414f839917845fd4295d
+    name: author
+    value: "6"
+    description: ""
+    disabled: false
+  - id: pair_51a7e9f45f8c43e9afdcfc2f7c8f1cc5
+    name: likes
+    value: ""
+    description: ""
+    disabled: true
+headers: []
+authentication: {}
+metaSortKey: -1659731678272.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

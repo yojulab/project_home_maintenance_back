@@ -1,0 +1,49 @@
+_id: req_5fc830806176401894db54aea26450f7
+type: Request
+parentId: fld_7466c67f088e4c73b85603092e7d6f1a
+modified: 1659791354295
+created: 1659674574392
+url: http://127.0.0.1:8000/profile/
+name: User Profile _PUT
+description: ""
+method: PUT
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_8925670dcd3a4c55b1d8ab9710814168
+      name: nickname
+      value: test03
+      description: ""
+    - id: pair_b65cbc0bce574118b1e904e1aa16a46f
+      name: position
+      value: good job
+      description: ""
+    - id: pair_b5653ecd1f274f09a4624b4b937493d0
+      name: subjects
+      value: job
+      description: ""
+    - id: pair_9ac5590018904315b8ff4626d28bd0fd
+      name: image
+      value: ""
+      description: ""
+      type: file
+      multiline: null
+parameters: []
+headers:
+  - id: pair_a7c7dd93ba58496091f5811882762c0d
+    name: Content-Type
+    value: multipart/form-data
+    description: ""
+  - id: pair_ead494409bbb4ee99f9a1e7e0a5d006c
+    name: Authorization
+    value: Token 40eece41e606e5bc82302a5b801f2f01088ea039
+    description: ""
+authentication: {}
+metaSortKey: -1659674574392
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

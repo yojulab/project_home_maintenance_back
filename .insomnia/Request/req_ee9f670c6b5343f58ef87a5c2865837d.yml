@@ -1,0 +1,31 @@
+_id: req_ee9f670c6b5343f58ef87a5c2865837d
+type: Request
+parentId: fld_7466c67f088e4c73b85603092e7d6f1a
+modified: 1659791195568
+created: 1659673846418
+url: http://127.0.0.1:8000/users/login/
+name: User Login _POST
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"username": "test_03",
+    	"password": "!test_03*"
+    }
+parameters: []
+headers:
+  - id: pair_0e65600ca5094eb5a0fb013fe7c5b2a4
+    name: Content-Type
+    value: application/json
+    description: ""
+authentication: {}
+metaSortKey: -1659674574442
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
