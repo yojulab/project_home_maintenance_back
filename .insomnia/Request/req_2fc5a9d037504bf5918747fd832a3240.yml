@@ -1,27 +1,28 @@
-_id: req_ee9f670c6b5343f58ef87a5c2865837d
+_id: req_2fc5a9d037504bf5918747fd832a3240
 type: Request
 parentId: fld_7466c67f088e4c73b85603092e7d6f1a
-modified: 1659792531188
-created: 1659673846418
-url: http://127.0.0.1:8000/users/login/
-name: User Login _POST
+modified: 1659792532793
+created: 1659792158373
+url: http://127.0.0.1:8000/users/register/
+name: User Register _POST
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"username": "test_03",
-    	"password": "!test_03*"
+    	"username": "test_02",
+    	"password": "!test_02*",
+    	"password2": "!test_02*",
+    	"email": "test_02@naver.com"
     }
 parameters: []
 headers:
-  - id: pair_0e65600ca5094eb5a0fb013fe7c5b2a4
-    name: Content-Type
+  - name: Content-Type
     value: application/json
-    description: ""
+    id: pair_2041b3504f444b6588c672225ea00cda
 authentication: {}
-metaSortKey: -1659674574442
+metaSortKey: -1659674574492
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

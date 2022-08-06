@@ -1,9 +1,9 @@
 _id: req_5fc830806176401894db54aea26450f7
 type: Request
 parentId: fld_7466c67f088e4c73b85603092e7d6f1a
-modified: 1659791354295
+modified: 1659792544798
 created: 1659674574392
-url: http://127.0.0.1:8000/profile/
+url: http://127.0.0.1:8000/users/profile/5/
 name: User Profile _PUT
 description: ""
 method: PUT
@@ -16,7 +16,7 @@ body:
       description: ""
     - id: pair_b65cbc0bce574118b1e904e1aa16a46f
       name: position
-      value: good job
+      value: bad job
       description: ""
     - id: pair_b5653ecd1f274f09a4624b4b937493d0
       name: subjects
@@ -28,6 +28,7 @@ body:
       description: ""
       type: file
       multiline: null
+      fileName: /Users/sanghunoh/Downloads/p_01.png
 parameters: []
 headers:
   - id: pair_a7c7dd93ba58496091f5811882762c0d
@@ -39,7 +40,7 @@ headers:
     value: Token 40eece41e606e5bc82302a5b801f2f01088ea039
     description: ""
 authentication: {}
-metaSortKey: -1659674574392
+metaSortKey: -1659674574429.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
