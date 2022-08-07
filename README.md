@@ -30,5 +30,9 @@ https://docs.djangoproject.com/en/4.1/intro/tutorial02/
 commit and push modify source to github
 
 ```
+% heroku config:set DISABLE_COLLECTSTATIC=1
 % git push heroku main
+% python manage.py migrate
+% python manage.py createsuperuser
+
 ```
