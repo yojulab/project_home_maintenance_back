@@ -26,16 +26,16 @@ class PostViewSet(viewsets.ModelViewSet):
         serializer.save(author=self.request.user, profile=profile)
 
 
-# @api_view(['GET'])
-# @permission_classes([IsAuthenticated])
-# def like_post(request, pk):
-#     post = get_object_or_404(Post, pk=pk)
-#     if request.user in post.likes.all():
-#         post.likes.remove(request.user)
-#     else:
-#         post.likes.add(request.user)
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def like_post(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.user in post.likes.all():
+        post.likes.remove(request.user)
+    else:
+        post.likes.add(request.user)
 
-#     return Response({'status': 'ok'})
+    return Response({'status': 'ok'})
 
 
 class CommentViewSet(viewsets.ModelViewSet):
