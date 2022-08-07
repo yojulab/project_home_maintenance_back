@@ -1,0 +1,39 @@
+_id: req_e863350c489e4719b8073a423a62eed2
+type: Request
+parentId: fld_6e581b1aee724dd7b86c86df65bac928
+modified: 1659846455448
+created: 1659846214859
+url: http://127.0.0.1:8000/comments/
+name: create 1 comment with post
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"post": "4",
+    	"text": "부정합니다."
+    }
+parameters: []
+headers:
+  - id: pair_ead494409bbb4ee99f9a1e7e0a5d006c
+    name: Authorization
+    value: Token 40eece41e606e5bc82302a5b801f2f01088ea039
+    description: ""
+    disabled: true
+  - name: Content-Type
+    value: application/json
+    id: pair_448a97c4dc7e4c1fb5bb265a033d3e70
+  - id: pair_6e51447ffb9946e2b32fdc18b719a6f5
+    name: Authorization
+    value: Token 9e5e96884c094b99a4fa6cf628bfe3583b9b88bf
+    description: ""
+authentication: {}
+metaSortKey: -1659731678172.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

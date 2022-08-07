@@ -1,46 +1,21 @@
 _id: req_88e9c02cf34146af8fe49eb4730c8699
 type: Request
 parentId: fld_6e581b1aee724dd7b86c86df65bac928
-modified: 1659790963403
+modified: 1659845447817
 created: 1659788081755
-url: http://127.0.0.1:8000/posts/
-name: Posts 1 post _POST
+url: http://127.0.0.1:8000/posts/2
+name: Posts 1 post
 description: ""
-method: POST
-body:
-  mimeType: multipart/form-data
-  params:
-    - id: pair_8925670dcd3a4c55b1d8ab9710814168
-      name: title
-      value: 타이틀 06
-      description: ""
-    - id: pair_b65cbc0bce574118b1e904e1aa16a46f
-      name: body
-      value: |-
-        내용에 
-        내용을  담아.
-      description: ""
-      type: text
-      multiline: text/plain
-    - id: pair_9ac5590018904315b8ff4626d28bd0fd
-      name: image
-      value: ""
-      description: ""
-      type: file
-      multiline: null
-      fileName: /Users/sanghunoh/Downloads/download.png
+method: DELETE
+body: {}
 parameters: []
 headers:
-  - id: pair_a7c7dd93ba58496091f5811882762c0d
-    name: Content-Type
-    value: multipart/form-data
-    description: ""
   - id: pair_ead494409bbb4ee99f9a1e7e0a5d006c
     name: Authorization
-    value: Token 9e5e96884c094b99a4fa6cf628bfe3583b9b88bf
+    value: Token 40eece41e606e5bc82302a5b801f2f01088ea039
     description: ""
 authentication: {}
-metaSortKey: -1659788782128
+metaSortKey: -1659760230187.75
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

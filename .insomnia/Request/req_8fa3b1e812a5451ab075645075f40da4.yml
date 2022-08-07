@@ -1,0 +1,38 @@
+_id: req_8fa3b1e812a5451ab075645075f40da4
+type: Request
+parentId: fld_6e581b1aee724dd7b86c86df65bac928
+modified: 1659846641419
+created: 1659844213683
+url: http://127.0.0.1:8000/like/4
+name: like in post
+description: ""
+method: GET
+body:
+  mimeType: multipart/form-data
+  params: []
+parameters: []
+headers:
+  - id: pair_ead494409bbb4ee99f9a1e7e0a5d006c
+    name: Authorization
+    value: Token 9e5e96884c094b99a4fa6cf628bfe3583b9b88bf
+    description: ""
+    disabled: false
+  - id: pair_5006a6f1da23405b84b1ed278da321e8
+    name: Authorization
+    value: Token 94513a03401557366ec93f8ba7f90115a13c7640
+    description: ""
+    disabled: true
+  - id: pair_4e2ec1f560e2493085373e0e3d8a017e
+    name: Authorization
+    value: Token 40eece41e606e5bc82302a5b801f2f01088ea039
+    description: ""
+    disabled: true
+authentication: {}
+metaSortKey: -1659731678222.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
