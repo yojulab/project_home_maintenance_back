@@ -1,14 +1,19 @@
 _id: req_b143dc0414964189a13a3046fd4be9da
 type: Request
 parentId: fld_6e581b1aee724dd7b86c86df65bac928
-modified: 1659790556997
+modified: 1659846657470
 created: 1659788782103
 url: http://127.0.0.1:8000/posts/
-name: "\bPosts list _GET"
+name: list
 description: ""
 method: GET
 body: {}
-parameters: []
+parameters:
+  - id: pair_9635110237334fe89760d3a205dc2b5f
+    name: author
+    value: "5"
+    description: ""
+    disabled: false
 headers: []
 authentication: {}
 metaSortKey: -1659788782103

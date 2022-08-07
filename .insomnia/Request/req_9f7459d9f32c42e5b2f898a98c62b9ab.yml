@@ -1,10 +1,10 @@
 _id: req_9f7459d9f32c42e5b2f898a98c62b9ab
 type: Request
 parentId: fld_6e581b1aee724dd7b86c86df65bac928
-modified: 1659791140192
+modified: 1659846622369
 created: 1659790614427
 url: http://127.0.0.1:8000/posts/
-name: "\bPosts listwithfilter _GET"
+name: list with filter
 description: ""
 method: GET
 body: {}

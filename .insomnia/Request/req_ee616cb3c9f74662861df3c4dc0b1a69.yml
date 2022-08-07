@@ -1,0 +1,53 @@
+_id: req_ee616cb3c9f74662861df3c4dc0b1a69
+type: Request
+parentId: fld_6e581b1aee724dd7b86c86df65bac928
+modified: 1659845938161
+created: 1659845523130
+url: http://127.0.0.1:8000/posts/
+name: create 1 post
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_03e073b8f27a47278e4ace96426f156c
+      name: title
+      value: html tag
+      description: ""
+    - id: pair_49d3a1593202402c8577868495a4ff92
+      name: category
+      value: html
+      description: ""
+    - id: pair_317fb80cabbc452f9d2b496f96d7a9a9
+      name: body
+      value: |-
+        <h5>첫 라인 넣기</h5>
+        <h4>두 번째 라인</h4>
+      description: ""
+      type: text
+      multiline: text/html
+    - id: pair_d657c3e204d74243afed982c85360355
+      name: image
+      value: test_04@test.net
+      description: ""
+      type: file
+      multiline: null
+      fileName: /Users/sanghunoh/Downloads/download.png
+parameters: []
+headers:
+  - id: pair_ead494409bbb4ee99f9a1e7e0a5d006c
+    name: Authorization
+    value: Token 40eece41e606e5bc82302a5b801f2f01088ea039
+    description: ""
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_4d839da1a0e84c78a02040ff9f2097af
+authentication: {}
+metaSortKey: -1659774506145.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
