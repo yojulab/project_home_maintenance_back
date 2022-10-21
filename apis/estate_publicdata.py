@@ -5,7 +5,7 @@ import PublicDataReader as pdr
 print(pdr.__version__)
 
 # 2. 공공 데이터 포털 OpenAPI 서비스 인증키 입력하기
-serviceKey = "BoygPZjC27pxm92hSposjnSob2u36vziS1rzIzxkrL9QxmlhB0SMARwLfNlBE3wrE7nnw34zLmmv0a6amvW4xg%3D%3D"
+serviceKey = ""
 
 # 3. 국토교통부 실거래가 정보 조회 OpenAPI 세션 정의하기
 # debug: True이면 모든 메시지 출력, False이면 오류 메시지만 출력 (기본값: False)
