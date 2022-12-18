@@ -19,6 +19,7 @@
 #        '거래금액', '도로명건물본번호코드', '도로명건물부번호코드', '도로명시군구코드', '도로명일련번호코드',
 #        '도로명지상지하코드', '도로명코드', '법정동본번코드', '법정동부번코드', '법정동시군구코드', '법정동읍면동코드',
 #        '법정동지번코드', '일련번호', '거래유형', '중개사소재지', '해제사유발생일', '해제여부']
+
 # 1. 라이브러리 임포트하기
 import PublicDataReader as pdr
 # print(pdr.__version__)
@@ -34,7 +35,7 @@ import sqlite3
 database = "./db.sqlite3"
 engine = sqlite3.connect(database)
 import pandas as pd
-df_commons = pd.read_sql('select * from common_codes order by serviceName', con=engine)
+df_commons = pd.read_sql('select * from commoncode_estate_real_transaction order by serviceName', con=engine)
 
 # 4. 지역코드(시군구코드) 검색하기
 sigunguName = "심곡본동"                            # 시군구코드: 41190
@@ -47,15 +48,21 @@ sigunguCode="41190"
 startYearMonth="202101"
 endYearMonth="202102"
 
+# def add_column_and_samevalue():
+
+
 for index, row in df_commons.iterrows():
-    prod =row['categoryName']       # 부동산 상품 종류 (ex. 아파트, 오피스텔, 단독다가구 등)
-    trans = row['itemName']        # 부동산 거래 유형 (ex. 매매, 전월세)
-    df = ts.collect_data(prod, trans, sigunguCode, startYearMonth, endYearMonth)
+    category = row['categoryName']       # 부동산 상품 종류 (ex. 아파트, 오피스텔, 단독다가구 등)
+    item = row['itemName']        # 부동산 거래 유형 (ex. 매매, 전월세)
+    df = ts.collect_data(category, item, sigunguCode, startYearMonth, endYearMonth)
     if not isinstance(df, str) and not df.empty:
         try:
-            df.to_sql('estate_real_transaction', con=engine, if_exists='append')
-        except :
-            # df.to_sql('estate_real_transaction', con=engine, if_exists='replace')
-            pass
+            df['categoryName'] = category
+            df['itemName'] = item
 
+            df.to_sql('estate_real_transaction', con=engine, if_exists='append', index=False)
+        except :
+            data = pd.read_sql('SELECT * FROM estate_real_transaction', con=engine)
+            df2 = pd.concat([data,df])
+            df2.to_sql(name='estate_real_transaction', con=engine, if_exists = 'replace', index=False)
 pass
